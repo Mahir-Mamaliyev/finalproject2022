@@ -12,6 +12,16 @@
     --primary-green: rgb(0,255,0);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    z-index: 2;
+}
+
 nav ul {
     overflow: hidden;
 }
@@ -37,4 +47,61 @@ nav ul li {
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus {
     border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/* Header ucun CSS kodlari */
+.header-wrapper {
+    background: url(computer.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    position: relative;
+}
+
+.main-info {
+    position: absolute;
+    top: -250px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info h1 {
+    color: var(--primary-orange);
+    margin-bottom: 25px;
+}
+
+.typed-text {
+    font-size: 2rem;
+    color: var(--primary-white);
+}
+
+@media (max-width:768px) {
+    .main-info h1 {
+        font-size: 1.7rem !important;
+    }
+
+    .typed-text {
+        font-size: 1.7rem !important;
+    }
+}
+
+.downloadcv {
+    border: 1px solid var(--primary-dark-grey);
+    padding: 0.625rem;
+    margin: 4rem;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: var(--primary-white);
+}
+
+.downloadcv:hover {
+    text-decoration: none;
+    background-color: var(--primary-hover-red);
+    color: var(--primary-white);
+    transition: .4s ease-in-out;
 }
