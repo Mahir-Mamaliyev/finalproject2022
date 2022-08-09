@@ -15,11 +15,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 nav {
-    z-index: 2;
+    z-index: 999;
 }
 
 nav ul {
@@ -92,7 +92,7 @@ nav ul li {
 
 .downloadcv {
     border: 1px solid var(--primary-dark-grey);
-    padding: 0.625rem;
+    padding: .625rem;
     margin: 4rem;
     border-radius: 4px;
     text-transform: uppercase;
@@ -135,4 +135,60 @@ nav ul li {
     .p-text {
         text-align: justify;
     }
+}
+
+.services {
+    text-align: center;
+    background-color: var(--primary-light-grey);
+    padding-bottom: 2rem;
+}
+
+.services h1 {
+    text-transform: uppercase;
+}
+
+.services .circle {
+    position: relative;
+    margin: .375rem auto;
+    background-color: var(--primary-orange);
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+}
+
+.services .circle .icon {
+    font-size: 1.4rem;
+    color: var(--primary-white);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 1.2rem;
+}
+
+.services .box {
+    background-color: var(--primary-white);
+    border-bottom: .3125rem solid var(--primary-orange);
+    padding: .625rem;
+    margin-bottom: 1.875rem;
+    height: 350px;
+    transition: all .2s ease-in-out;
+}
+
+.services .box:hover {
+    cursor: pointer;
+    background: var(--primary-orange);
+    border-bottom: .3125rem solid var(--primary-dark);
+}
+
+.services .box:hover .icon {
+    color: var(--primary-dark);
+}
+
+.services .box:hover .circle {
+    background: var(--primary-white);
+}
+
+.services .box:hover p {
+    color: var(--primary-white);
 }
