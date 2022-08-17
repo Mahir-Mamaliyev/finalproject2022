@@ -1,7 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-//komponentler gelecek
+//komponentler import olunacag(yani gelecek)
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
